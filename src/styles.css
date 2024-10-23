@@ -1,0 +1,18 @@
+.template-preview {
+    max-height: 150px;
+    overflow: auto;
+    padding: 8px;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+}
+
+.template-textarea {
+    width: 100%;
+    height: 300px;
+    resize: vertical;
+}
+
+.copy-button-container {
+    text-align: right;
+    margin-top: 1em;
+}

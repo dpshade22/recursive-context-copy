@@ -82,11 +82,6 @@ class DepthSelectionModal extends Modal {
         const preview = previewContainer.createEl('pre', {
             cls: 'template-preview'
         });
-        preview.style.maxHeight = '150px';
-        preview.style.overflow = 'auto';
-        preview.style.padding = '8px';
-        preview.style.backgroundColor = 'var(--background-secondary)';
-        preview.style.borderRadius = '4px';
 
         this.previewContainer = previewContainer;
         this.previewElement = preview;
@@ -96,19 +91,18 @@ class DepthSelectionModal extends Modal {
         textAreaContainer.style.margin = '1em 0';
 
         // Add the prompt text area
-        const textArea = textAreaContainer.createEl('textarea');
+        const textArea = textAreaContainer.createEl('textarea', {
+            cls: 'template-textarea'
+        });
         textArea.value = this.template;
-        textArea.style.width = '100%';
-        textArea.style.height = '300px';
-        textArea.style.resize = 'vertical';
         textArea.addEventListener('input', (e) => {
             this.template = e.target.value;
         });
 
         // Add the copy button at the bottom
-        const buttonContainer = contentEl.createDiv();
-        buttonContainer.style.textAlign = 'right';
-        buttonContainer.style.marginTop = '1em';
+        const buttonContainer = contentEl.createDiv({
+            cls: 'copy-button-container'
+        });
 
         const copyButton = buttonContainer.createEl('button', {
             text: 'Copy',

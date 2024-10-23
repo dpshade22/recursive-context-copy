@@ -42,7 +42,7 @@ class DepthSelectionModal extends Modal {
 
         // Template file selector with dropdown
         const templateSetting = new Setting(contentEl)
-            .setName('Template File')
+            .setName('Template file')
             .setDesc('Select a template file for the LLM to follow (optional)')
             .addDropdown(dropdown => {
                 // Add empty option

@@ -1,11 +1,13 @@
 {
-  "id": "recursive-context-copy",
-  "name": "Recursive Context Copy",
+  "id": "fabric-link",
+  "name": "Fabric Link",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "Copies the content of a markdown file along with the content of all files that link to it (backlinks). The copied content is concatenated and placed in the clipboard. This is useful for quickly loading context into AI. Can be triggered by right-clicking a file and selecting the context menu item, or by using a command.",
-  "author": "Dylan Shade",
-  "authorUrl": "https://github.com/dpshade22",
-  "fundingUrl": "",
-  "isDesktopOnly": false
+  "description": "Create links to Fabric documents",
+  "author": "Your Name",
+  "authorUrl": "https://github.com/yourusername",
+  "isDesktopOnly": true,
+  "permissions": [
+    "requestUrl"
+  ]
 }
